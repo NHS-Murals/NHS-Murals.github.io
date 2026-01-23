@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The NHS Mural Preservation Project</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="..\..\assets\style.css" rel="stylesheet" type="text/css" media="all">
+    <script src="..\..\assets\script.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap');
+    </style>
+  </head>
+
+  <body>
+  
+    <header>
+      <h3>welcome to the</h3>
+      <h1>NHS Mural Preservation Project</h1>
+    </header>
+    
+    <nav>
+      <ul class="nav">
+        <li><a href="..\..\index.html">Home</a></li>
+        <li><a href="..\..\explore.html">Explore</a></li>
+        <li><a href="..\..\about.html">About</a></li>
+        <li><a href="..\..\contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    
+    <main>
+      <section>
+          <!-- Container for the image gallery -->
+          <div class="container">
+
+            <!-- Full-width images with number text -->
+            <div class="mySlides">
+              <div class="numbertext">1 / 2</div>
+              <!--id="myImg" is part of the modal image code, !!!!ALWAYS INCLUDE!!!!-->
+                <img id="myImg" src="..\..\images\3rdFloorEHouse\IMG_7086.avif" loading="lazy" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 2</div>
+                <img id="myImg" src="..\..\images\3rdFloorEHouse\IMG_7085.avif" loading="lazy" style="width:100%">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Image text -->
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail images -->
+            <div class="row">
+              <div class="column">
+                <img class="demo cursor" src="..\..\images\3rdFloorEHouse\IMG_7086.avif" style="width:100%" onclick="currentSlide(1)" alt="The door as a whole.">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="..\..\images\3rdFloorEHouse\IMG_7085.avif" style="width:100%" onclick="currentSlide(2)" alt="Close-up of only the painted aspects of the door.">
+              </div>
+            </div>
+          </div>
+      </section>
+      <section>
+        <div class="artistblurb">
+          <h3>Untitled (Hope whispers)</h3>
+          <p>Unknown</p>
+          <p><b>Located: </b>3rd Floor, E House, Room 310E</p>
+        </div>
+        <p>A mural on the door of room 310E. At the top of the door is a mural of a person holding the world (depicted as a blue orb patchworked by paper scraps with text about negative phenomena) over their shoulders as green streaks swirl above them. Below this reads the quote: WHEN THE WORLD SAYS "GIVE UP" HOPE WHISPERS "try 1 more time". The middle half of the door has painted black branches that curl into swirls at their ends.</p>
+        <p><b>Notes:</b> I have no idea where this quote came from and all sources claiming it don't seem to be backed up by anything substantial. Please reach out if you have any idea about where this quote from.</p>
+      </section>
+    </main>
+    
+    <footer>
+      <div class="footertext">
+        <p>Made by Marianne Joy D. Montenegro & Daniel Guo</p>
+        <p>Created on Nov. 11, 2024</p><p>Launched on Jan. 16, 2025</p>
+      </div>
+
+      <div class="footercol">
+        <h4>Contact Us</h4>
+        <p><b>Email:</b> <a href="mailto:nhsmuralpreservationproject@gmail.com">nhsmuralpreservationproject@gmail.com</a></p>
+      </div>
+    </footer>
+    
+  </body>
+  
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The NHS Mural Preservation Project</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="..\..\..\assets\style.css" rel="stylesheet" type="text/css" media="all">
+    <script src="..\..\..\assets\script.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap');
+    </style>
+  </head>
+
+  <body>
+  
+    <header>
+      <h3>welcome to the</h3>
+      <h1>NHS Mural Preservation Project</h1>
+    </header>
+    
+    <nav>
+      <ul class="nav">
+        <li><a href="..\..\..\index.html">Home</a></li>
+        <li><a href="..\..\..\explore.html">Explore</a></li>
+        <li><a href="..\..\..\about.html">About</a></li>
+        <li><a href="..\..\..\contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    
+    <main>
+      <section>
+          <!-- Container for the image gallery -->
+          <div class="container">
+
+            <!-- Full-width images with number text -->
+            <div class="mySlides">
+              <div class="numbertext">1 / 9</div>
+              <!--id="myImg" is part of the modal image code, !!!!ALWAYS INCLUDE!!!!-->
+                <img id="myImg" src="..\..\..\images\3rdFloorEHouse\Room306E\IMG_7276.avif" loading="lazy" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 9</div>
+                <!--id="myImg" is part of the modal image code, !!!!ALWAYS INCLUDE!!!!-->
+                  <img id="myImg" src="..\..\..\images\3rdFloorEHouse\Room306E\IMG_7277.avif" loading="lazy" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 9</div>
+                <!--id="myImg" is part of the modal image code, !!!!ALWAYS INCLUDE!!!!-->
+                  <img id="myImg" src="..\..\..\images\3rdFloorEHouse\Room306E\IMG_7278.avif" loading="lazy" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 9</div>
+                <!--id="myImg" is part of the modal image code, !!!!ALWAYS INCLUDE!!!!-->
+                  <img id="myImg" src="..\..\..\images\3rdFloorEHouse\Room306E\IMG_7289.avif" loading="lazy" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 9</div>
+                <!--id="myImg" is part of the modal image code, !!!!ALWAYS INCLUDE!!!!-->
+                  <img id="myImg" src="..\..\..\images\3rdFloorEHouse\Room306E\IMG_7290.avif" loading="lazy" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 9</div>
+                <!--id="myImg" is part of the modal image code, !!!!ALWAYS INCLUDE!!!!-->
+                  <img id="myImg" src="..\..\..\images\3rdFloorEHouse\Room306E\IMG_7291.avif" loading="lazy" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">7 / 9</div>
+                <!--id="myImg" is part of the modal image code, !!!!ALWAYS INCLUDE!!!!-->
+                  <img id="myImg" src="..\..\..\images\3rdFloorEHouse\Room306E\IMG_7292.avif" loading="lazy" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">8 / 9</div>
+                <!--id="myImg" is part of the modal image code, !!!!ALWAYS INCLUDE!!!!-->
+                  <img id="myImg" src="..\..\..\images\3rdFloorEHouse\Room306E\IMG_7293.avif" loading="lazy" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">9 / 9</div>
+              <!--id="myImg" is part of the modal image code, !!!!ALWAYS INCLUDE!!!!-->
+                <img id="myImg" src="..\..\..\images\3rdFloorEHouse\Room306E\IMG_7538.avif" loading="lazy" style="width:100%">
+          </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Image text -->
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail images -->
+            <div class="row">
+              <div class="column">
+                <img class="demo cursor" src="..\..\..\images\3rdFloorEHouse\Room306E\IMG_7276.avif" style="width:100%" onclick="currentSlide(1)" alt="The door and its murals as a whole.">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="..\..\..\images\3rdFloorEHouse\Room306E\IMG_7277.avif" style="width:100%" onclick="currentSlide(2)" alt="The Donald Trump caraciture. The censor bar over his middle finger looks to be made of tape and marker rather than just paint. Dated '17.">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="..\..\..\images\3rdFloorEHouse\Room306E\IMG_7278.avif" style="width:100%" onclick="currentSlide(3)" alt="The dock mural. Signed by an AT '10.">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="..\..\..\images\3rdFloorEHouse\Room306E\IMG_7289.avif" style="width:100%" onclick="currentSlide(4)" alt="The dreamcatcher mural. All the words are faded, likely written with marker than paint. The quote says: All our dreams can come true, if we have the courage to pursue them, and is attributed to Disney.">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="..\..\..\images\3rdFloorEHouse\Room306E\IMG_7290.avif" style="width:100%" onclick="currentSlide(5)" alt="The date on the dreamcatcher mural: 2010.">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="..\..\..\images\3rdFloorEHouse\Room306E\IMG_7291.avif" style="width:100%" onclick="currentSlide(6)" alt="The window mural.">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="..\..\..\images\3rdFloorEHouse\Room306E\IMG_7292.avif" style="width:100%" onclick="currentSlide(7)" alt="The Rick and Morty mural, signed by Arlyn Muralles '17.">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="..\..\..\images\3rdFloorEHouse\Room306E\IMG_7293.avif" style="width:100%" onclick="currentSlide(8)" alt="The Spirited Away tribute. The dragon (Haku) and the mouse's (Boh) colors are inaccurate to the movie but both are recognizable by design and association with the other characters in the mural.">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="..\..\..\images\3rdFloorEHouse\Room306E\IMG_7538.avif" style="width:100%" onclick="currentSlide(9)" alt="The Harry Potter mural. Signed by Clara Lazaro '18 & Sam B.">
+              </div>
+            </div>
+          </div>
+      </section>
+      <section>
+        <div class="artistblurb">
+          <h3>Untitled (Door with assorted murals)</h3>
+          <p>Various artists (2010-18)</p>
+          <p><b>Located: </b>3rd Floor, E House, Room 306E</p>
+        </div>
+        <p>The door of room 306E with assorted murals painted on and near it. Spiraling clockwise: a mural depicting Dory, a regal blue tang fish from Disney's Finding Nemo franchise alongside some bubbles; a mural with a stylized depiction of Harry Potter's head, a pale-skinned boy with dark hair and glasses as well as a notable lightning-bolt-shaped mark, next to a quote attributed to Albus Dumbledore, another character from the Harry Potter franchise: "It is our choices, Harry, that show what we truly are, far more than our abilities." Above this quote is a circle in a triangle, bisected in the middle by a line: the symbol of the Deathly Hallows; a mural of a window opening into a view of a waterfall flanked by hills with yellow trees; a mural of a dreamcatcher against a bright yellow background, the quote attributed to Walt Disney above it reads: "All our dreams can come true, if we have the courage to pursue them"; a mural of a dock's silhouette in front of a ocean with pink and orange hues; a mural of a caricaturized Donald Trump holding up a censored middle finger, stylized as if it was grafitti on a brick wall complete with tags that surround him like: MERICA and TRUMP; a mural depicting various characters from the Ghibli movie Spirited Away, the centerpiece of which is a sleek white dragon, most likely Haku, with a dark blue mane that stretches to their tail-end, a peach underbelly, yellow horns and avian feet, and blue eyes. A small black bird, Haedori, carrying a chubby grey mouse, likely Boh, is by the dragon's back and a Soot Sprite, a small fuzzy black creature, holds up a star-shaped konpeitō candy is by the dragon's tail; and a mural depicting Rick, an old man with spiky blue hair pale, almost grey skin in a lab coat, and Morty, a young boy with brown hair and pale skin in a yellow shirt, from the titular Adult Swim show, against a starry background. Rick is literally, grotesquely, opening Morty's eyes.</p>
+        <p><b>Notes:</b> There's too many murals both signed and unsigned and unsigned but dated in this one so I'll just list all what I can gather here:</p>
+        <ul>
+            <li>Dory mural was signed by an Imelda '17</li>
+            <li>Harry Potter mural was signed by Clara Lorenzo '18 and a Sam B.</li>
+            <li>Window mural is unsigned and undated from what I could tell.</li>
+            <li>Trump mural was dated '17 but I can't read the what's presumably the signature(s) below the date. Please reach out if you can or just know anything about it.</li>
+            <li>Dock mural was signed by an AT '10.</li>
+            <li>Dreamcatcher mural is unsigned but dated on 2010.</li>
+            <li>Sprited Away mural is unsigned and undated.</li>
+            <li>Rick and Morty mural was signed by Arlyn Muralles '17.</li>
+        </ul>
+        <p>The Harry Potter quote is specifically from Harry Potter and the Chamber of Secrets, first published on 1998<sup>[1]</sup> and the Walt Disney quote is compiled in Pat Williams' How to Be Like Walt: Capturing the Magic Every Day of Your Life, published on 2004.<sup>[2]</sup></p>
+        <p>Please reach to me if you have any idea who AT and Imelda could be, thanks!</p>
+        <!-- Remove if unneeded -->
+        <p><b>References & Citations:</b></p>
+        <ol>
+            <li>Rowling, J.K. <i>Harry Potter and the Chamber of Secrets.</i> New York, NY, Scholastic Inc, 1998, p. 333.</li>
+            <li>Williams, Pat, and Jim Denney. <i>How to Be like Walt.</i> Deerfield Beach, Fla., Health Communications, 2004, <a href="https://archive.org/details/howtobelikewalt0000will/mode/2up">https://archive.org/details/howtobelikewalt0000will/mode/2up</a>. Accessed 12 Jan. 2025.</li>
+        </ol>
+      </section>
+    </main>
+    
+    <footer>
+      <div class="footertext">
+        <p>Made by Marianne Joy D. Montenegro & Daniel Guo</p>
+        <p>Created on Nov. 11, 2024</p><p>Launched on Jan. 16, 2025</p>
+      </div>
+
+      <div class="footercol">
+        <h4>Contact Us</h4>
+        <p><b>Email:</b> <a href="mailto:nhsmuralpreservationproject@gmail.com">nhsmuralpreservationproject@gmail.com</a></p>
+      </div>
+    </footer>
+    
+  </body>
+  
+</html>

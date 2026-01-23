@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The NHS Mural Preservation Project</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="..\..\assets\style.css" rel="stylesheet" type="text/css" media="all">
+    <script src="..\..\assets\script.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap');
+    </style>
+  </head>
+
+  <body>
+  
+    <header>
+      <h3>welcome to the</h3>
+      <h1>NHS Mural Preservation Project</h1>
+    </header>
+    
+    <nav>
+      <ul class="nav">
+        <li><a href="..\..\index.html">Home</a></li>
+        <li><a href="..\..\explore.html">Explore</a></li>
+        <li><a href="..\..\about.html">About</a></li>
+        <li><a href="..\..\contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    
+    <main>
+      <section>
+          <!-- Container for the image gallery -->
+          <div class="container">
+
+            <!-- Full-width images with number text -->
+            <div class="mySlides">
+              <div class="numbertext">1 / 4</div>
+              <!--id="myImg" is part of the modal image code, !!!!ALWAYS INCLUDE!!!!-->
+                <img id="myImg" src="..\..\images\3rdFloorEHouse\IMG_7007.avif" loading="lazy" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 4</div>
+                <img id="myImg" src="..\..\images\3rdFloorEHouse\IMG_7008.avif" loading="lazy" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                  <img id="myImg" src="..\..\images\3rdFloorEHouse\IMG_7037.avif" loading="lazy" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                    <img id="myImg" src="..\..\images\3rdFloorEHouse\IMG_7038.avif" loading="lazy" style="width:100%">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Image text -->
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail images -->
+            <div class="row">
+              <div class="column">
+                <img class="demo cursor" src="..\..\images\3rdFloorEHouse\IMG_7007.avif" style="width:100%" onclick="currentSlide(1)" alt="The mural as a whole.">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="..\..\images\3rdFloorEHouse\IMG_7008.avif" style="width:100%" onclick="currentSlide(2)" alt="A close-up shot of the shattered, foremost lens. The material that makes the broken lens up looks like some sort of tile.">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="..\..\images\3rdFloorEHouse\IMG_7037.avif" style="width:100%" onclick="currentSlide(3)" alt="Kane M. '19 and below that Jorgie V. '18. This is directly to the bottom-left of the mural and are the bigger of the three signatures.">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="..\..\images\3rdFloorEHouse\IMG_7038.avif" style="width:100%" onclick="currentSlide(4)" alt="Tiara T. '19. The smaller of the three signatures, signed into the groove of the framing red blob's outside.">
+              </div>
+            </div>
+          </div>
+      </section>
+      <section>
+        <div class="artistblurb">
+          <h3>Untitled (Multi-faced)</h3>
+          <p>Kane M., & Tiara T. (2019), Jorgie V. (2018)</p>
+          <p><b>Located: </b>3rd Floor, E House Staircase</p>
+        </div>
+        <p>A mural depicting a multi-faced blue person's bust wearing a gray jacket, a white shirt, and sunglasses on every one of their face, the middle and most front facing face's sunglasses has a shattered lens. They are framed by a red, blobby frame, the red progressively becoming more darker towards the center, creating the illusion of depth. Their grey jacket drips over this frame.</p>
+        <p><b>Notes:</b> None right now!</p>
+      </section>
+    </main>
+    
+    <footer>
+      <div class="footertext">
+        <p>Made by Marianne Joy D. Montenegro & Daniel Guo</p>
+        <p>Created on Nov. 11, 2024</p><p>Launched on Jan. 16, 2025</p>
+      </div>
+
+      <div class="footercol">
+        <h4>Contact Us</h4>
+        <p><b>Email:</b> <a href="mailto:nhsmuralpreservationproject@gmail.com">nhsmuralpreservationproject@gmail.com</a></p>
+      </div>
+    </footer>
+    
+  </body>
+  
+</html>

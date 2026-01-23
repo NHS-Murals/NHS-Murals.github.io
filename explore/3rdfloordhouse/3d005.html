@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The NHS Mural Preservation Project</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="..\..\assets\style.css" rel="stylesheet" type="text/css" media="all">
+    <script src="..\..\assets\script.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap');
+    </style>
+  </head>
+
+  <body>
+  
+    <header>
+      <h3>welcome to the</h3>
+      <h1>NHS Mural Preservation Project</h1>
+    </header>
+    
+    <nav>
+      <ul class="nav">
+        <li><a href="..\..\index.html">Home</a></li>
+        <li><a href="..\..\explore.html">Explore</a></li>
+        <li><a href="..\..\about.html">About</a></li>
+        <li><a href="..\..\contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    
+    <main>
+      <section>
+          <!-- Container for the image gallery -->
+          <div class="container">
+
+            <!-- Full-width images with number text -->
+            <div class="mySlides">
+              <div class="numbertext">1 / 9</div>
+              <!--id="myImg" is part of the modal image code, !!!!ALWAYS INCLUDE!!!!-->
+                <img id="myImg" src="..\..\images\3rdFloorDHouse\IMG_7109.avif" loading="lazy" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 9</div>
+                <img id="myImg" src="..\..\images\3rdFloorDHouse\IMG_7110.avif" loading="lazy" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 9</div>
+                  <img id="myImg" src="..\..\images\3rdFloorDHouse\IMG_7114.avif" loading="lazy" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 9</div>
+                  <img id="myImg" src="..\..\images\3rdFloorDHouse\IMG_7115.avif" loading="lazy" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 9</div>
+                  <img id="myImg" src="..\..\images\3rdFloorDHouse\IMG_7116.avif" loading="lazy" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 9</div>
+                  <img id="myImg" src="..\..\images\3rdFloorDHouse\IMG_7117.avif" loading="lazy" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">7 / 9</div>
+                  <img id="myImg" src="..\..\images\3rdFloorDHouse\IMG_7118.avif" loading="lazy" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">8 / 9</div>
+                  <img id="myImg" src="..\..\images\3rdFloorDHouse\IMG_7120.avif" loading="lazy" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">9 / 9</div>
+                  <img id="myImg" src="..\..\images\3rdFloorDHouse\IMG_7121.avif" loading="lazy" style="width:100%">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Image text -->
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail images -->
+            <div class="row">
+              <div class="column">
+                <img class="demo cursor" src="..\..\images\3rdFloorDHouse\IMG_7109.avif" style="width:100%" onclick="currentSlide(1)" alt="The mural as a whole.">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="..\..\images\3rdFloorDHouse\IMG_7110.avif" style="width:100%" onclick="currentSlide(2)" alt="The firefighter and person in fatigues.">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="..\..\images\3rdFloorDHouse\IMG_7114.avif" style="width:100%" onclick="currentSlide(3)" alt="The suited person and the sportswears-wearing person. The one in sportswear has an incomplete face.">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="..\..\images\3rdFloorDHouse\IMG_7115.avif" style="width:100%" onclick="currentSlide(4)" alt="The person with the book. Someone seems to have drawn in their face crudely in pencil.">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="..\..\images\3rdFloorDHouse\IMG_7116.avif" style="width:100%" onclick="currentSlide(5)" alt="What a pretty smile :^)">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="..\..\images\3rdFloorDHouse\IMG_7117.avif" style="width:100%" onclick="currentSlide(6)" alt="The person in the labcoat, the person in the hoodie, and the guitarist.">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="..\..\images\3rdFloorDHouse\IMG_7118.avif" style="width:100%" onclick="currentSlide(7)" alt="A close-up of the guitarist's technique.">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="..\..\images\3rdFloorDHouse\IMG_7120.avif" style="width:100%" onclick="currentSlide(8)" alt="Note the missing leg penciled in over some off-color paint.">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="..\..\images\3rdFloorDHouse\IMG_7121.avif" style="width:100%" onclick="currentSlide(9)" alt="A closer look at the previous image.">
+              </div>
+            </div>
+          </div>
+      </section>
+      <section>
+        <div class="artistblurb">
+          <h3>Untitled (Careers)</h3>
+          <p>Unknown</p>
+          <p><b>Located: </b>3rd Floor, D House-C House Hallway</p>
+        </div>
+        <p>A large mural that depicts many people of varying careers on a blue ribbon orginating from an orange-leafed tree in the background. From left to right: a tan-skinned person in firefighter gear depicted hosing down the physical fire alarm over the mural; a pale-skinned green-eyed person with their brown hair in a bun wearing camouflaged fatigues and waving an American flag; a pale-skinned blond-haired blue-eyed person with a curt haircut in a grey suit over a white collared shirt and a red tie holding a briefcase in one hand and a phone up to their ear in the other; a somewhat tan person wearing a sleeveless red jersey with similarly colored shoes and a dark beige pair of shorts ready to launch into a sprint; a pale-skinned person with long blonde hair wearing a purple sleeveless turtleneck sweater and white pants holding a book while appearing as if they are leaning against the tree; a tan-skinned brown-eyed person with their black hair in a bun wearing a lab coat over a blue collared shirt and a grey pencil skirt with a red stethoscope around their neck as well as holding a grey sheet; a brown-skinned brown-eyed person with red and pink hair wearing a grey hoodie with a hood over their head and matching pants, they appear to be leaning but a light sketch of their other leg shows that they were intended to be running; and a pale-skinned brown-haired brown-eyed person with shaggy hair and in casual attire sitting on a stool and strumming a guitar.</p>
+        <p><b>Notes:</b> None right now!</p>
+      </section>
+    </main>
+    
+    <footer>
+      <div class="footertext">
+        <p>Made by Marianne Joy D. Montenegro & Daniel Guo</p>
+        <p>Created on Nov. 11, 2024</p><p>Launched on Jan. 16, 2025</p>
+      </div>
+
+      <div class="footercol">
+        <h4>Contact Us</h4>
+        <p><b>Email:</b> <a href="mailto:nhsmuralpreservationproject@gmail.com">nhsmuralpreservationproject@gmail.com</a></p>
+      </div>
+    </footer>
+    
+  </body>
+  
+</html>

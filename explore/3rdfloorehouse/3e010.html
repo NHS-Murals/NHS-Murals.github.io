@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The NHS Mural Preservation Project</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="..\..\assets\style.css" rel="stylesheet" type="text/css" media="all">
+    <script src="..\..\assets\script.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap');
+    </style>
+  </head>
+
+  <body>
+  
+    <header>
+      <h3>welcome to the</h3>
+      <h1>NHS Mural Preservation Project</h1>
+    </header>
+    
+    <nav>
+      <ul class="nav">
+        <li><a href="..\..\index.html">Home</a></li>
+        <li><a href="..\..\explore.html">Explore</a></li>
+        <li><a href="..\..\about.html">About</a></li>
+        <li><a href="..\..\contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    
+    <main>
+      <section>
+          <!-- Container for the image gallery -->
+          <div class="container">
+
+            <!-- Full-width images with number text -->
+            <div class="mySlides">
+              <div class="numbertext">1 / 1</div>
+              <!--id="myImg" is part of the modal image code, !!!!ALWAYS INCLUDE!!!!-->
+                <img id="myImg" src="..\..\images\3rdFloorEHouse\IMG_7266.avif" loading="lazy" style="width:100%">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Image text -->
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail images -->
+            <div class="row">
+              <div class="column">
+                <img class="demo cursor" src="..\..\images\3rdFloorEHouse\IMG_7266.avif" style="width:100%" onclick="currentSlide(1)" alt="The mural as a whole.">
+              </div>
+            </div>
+          </div>
+      </section>
+      <section>
+        <div class="artistblurb">
+          <h3>Untitled (I think, therefore I am)</h3>
+          <p>Unknown</p>
+          <p><b>Located: </b>3rd Floor, E House-D House Atrium</p>
+        </div>
+        <p>A small rectangular mural depicting only the upper half pale-skinned face with particularly striking blue eyes, above those eyes, about where the forehead is located, is the quote: "I THINK THEREFORE I AM". The face is flanked on both sides by a busy bunch of colorful patterns that notably include swirls, arrows, and stripes to name a few.</p>
+        <p><b>Notes:</b> This mural is above a display case on the wall, hence the size. The quote is a translation of French philosopher René Descartes' <i>cogito, ergo sum</i> which first appeared in his <i>Discourse on Method</i> published in 1637.<sup>[1]</sup></p>
+        <!-- Remove if unneeded -->
+        <p><b>References & Citations:</b></p>
+        <ol>
+          <li>Britannica, The Editors of Encyclopaedia. "cogito, ergo sum". Encyclopedia Britannica, 6 Jan. 2025, <a href="https://www.britannica.com/topic/cogito-ergo-sum">https://www.britannica.com/topic/cogito-ergo-sum</a>. Accessed 11 January 2025.</li>
+        </ol>
+      </section>
+    </main>
+    
+    <footer>
+      <div class="footertext">
+        <p>Made by Marianne Joy D. Montenegro & Daniel Guo</p>
+        <p>Created on Nov. 11, 2024</p><p>Launched on Jan. 16, 2025</p>
+      </div>
+
+      <div class="footercol">
+        <h4>Contact Us</h4>
+        <p><b>Email:</b> <a href="mailto:nhsmuralpreservationproject@gmail.com">nhsmuralpreservationproject@gmail.com</a></p>
+      </div>
+    </footer>
+    
+  </body>
+  
+</html>

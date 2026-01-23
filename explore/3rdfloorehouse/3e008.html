@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The NHS Mural Preservation Project</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="..\..\assets\style.css" rel="stylesheet" type="text/css" media="all">
+    <script src="..\..\assets\script.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap');
+    </style>
+  </head>
+
+  <body>
+  
+    <header>
+      <h3>welcome to the</h3>
+      <h1>NHS Mural Preservation Project</h1>
+    </header>
+    
+    <nav>
+      <ul class="nav">
+        <li><a href="..\..\index.html">Home</a></li>
+        <li><a href="..\..\explore.html">Explore</a></li>
+        <li><a href="..\..\about.html">About</a></li>
+        <li><a href="..\..\contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    
+    <main>
+      <section>
+          <!-- Container for the image gallery -->
+          <div class="container">
+
+            <!-- Full-width images with number text -->
+            <div class="mySlides">
+              <div class="numbertext">1 / 6</div>
+              <!--id="myImg" is part of the modal image code, !!!!ALWAYS INCLUDE!!!!-->
+                <img id="myImg" src="..\..\images\3rdFloorEHouse\IMG_7087.avif" loading="lazy" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 6</div>
+                <img id="myImg" src="..\..\images\3rdFloorEHouse\IMG_7088.avif" loading="lazy" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                  <img id="myImg" src="..\..\images\3rdFloorEHouse\IMG_7089.avif" loading="lazy" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                  <img id="myImg" src="..\..\images\3rdFloorEHouse\IMG_7090.avif" loading="lazy" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                  <img id="myImg" src="..\..\images\3rdFloorEHouse\IMG_7091.avif" loading="lazy" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                  <img id="myImg" src="..\..\images\3rdFloorEHouse\IMG_7093.avif" loading="lazy" style="width:100%">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Image text -->
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail images -->
+            <div class="row">
+              <div class="column">
+                <img class="demo cursor" src="..\..\images\3rdFloorEHouse\IMG_7087.avif" style="width:100%" onclick="currentSlide(1)" alt="The mural as a whole.">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="..\..\images\3rdFloorEHouse\IMG_7088.avif" style="width:100%" onclick="currentSlide(2)" alt="A close-up of the students in the background.">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="..\..\images\3rdFloorEHouse\IMG_7089.avif" style="width:100%" onclick="currentSlide(3)" alt="A close-up of the paper dispensers and the window with its painting of some red-haired figure.">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="..\..\images\3rdFloorEHouse\IMG_7090.avif" style="width:100%" onclick="currentSlide(4)" alt="A close-up of the computers and the paintings in the far background. The chunkiness of the computers should say something about when this mural was first made.">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="..\..\images\3rdFloorEHouse\IMG_7091.avif" style="width:100%" onclick="currentSlide(5)" alt="A close-up of the detail on the hole's edge plus the rest of the background. Say hi to Barney!">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="..\..\images\3rdFloorEHouse\IMG_7093.avif" style="width:100%" onclick="currentSlide(6)" alt="Carlos Valdovinos, Diego Quiroz, Robertina Lleshdedaj, Edwin Munoz, George Tsaparakis (2009), & AZ[?] (2020)">
+              </div>
+            </div>
+          </div>
+      </section>
+      <section>
+        <div class="artistblurb">
+          <h3>Untitled (Art room)</h3>
+          <p>Carlos Valdovinos, Diego Quiroz, Robertina Lleshdedaj, Edwin Munoz, George Tsaparakis (2009), & "AZ[?]" (2020)</p>
+          <p><b>Located: </b>3rd Floor, E House-D House Atrium</p>
+        </div>
+        <p>A mural that appears as if there is a hole in a blue wall peeking into an art room. In the foreground, the closest to the hole's opening, are various bulletin paper dispensers and lockers, some closed, some open, behind them. A window with a small panting propped up on it is to the right of these as well. To the left of all of this are some tables with a few students populating them. Further in the background are some computers and various pieces of art on the wall.</p>
+        <p><b>Notes:</b> Had to search around for Robertina Lleshdedaj's last name as it was too obscured, found it in the digital archives of our yearbooks eventually.<sup>[1]</sup> Thank you for the help, Ms. Caiola!</p>
+        <p>Shares a wall with <a href="3e011.html">Untitled (Beautiful)</a>.</p>
+        <!-- Remove if unneeded -->
+        <p><b>References & Citations:</b></p>
+        <ol>
+          <li>Norwalk High School. <i>NHS Presents... Reminiscentiae</i>. Graduating Class of 2009, 2009, p. 47, <a href="drive.google.com/file/d/13du4KnQMT0o6z9cOMse75FPPEcTQ3N5w/view">drive.google.com/file/d/13du4KnQMT0o6z9cOMse75FPPEcTQ3N5w/view.</a> Accessed 14 Jan. 2025.</li>
+        </ol>
+      </section>
+    </main>
+    
+    <footer>
+      <div class="footertext">
+        <p>Made by Marianne Joy D. Montenegro & Daniel Guo</p>
+        <p>Created on Nov. 11, 2024</p><p>Launched on Jan. 16, 2025</p>
+      </div>
+
+      <div class="footercol">
+        <h4>Contact Us</h4>
+        <p><b>Email:</b> <a href="mailto:nhsmuralpreservationproject@gmail.com">nhsmuralpreservationproject@gmail.com</a></p>
+      </div>
+    </footer>
+    
+  </body>
+  
+</html>

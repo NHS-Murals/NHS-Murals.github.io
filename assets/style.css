@@ -1,0 +1,327 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+   
+/* padding/margin/border: top, right, bottom, left */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: block;
+  margin: auto;
+  width: 65%;
+  min-height: 100%;
+  background-color: white;
+  background-color:#269;
+  /* START */
+  background-color:silver;
+  background-image:
+  radial-gradient(circle at 100% 150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+  radial-gradient(circle at 0    150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+  radial-gradient(circle at 50%  100%, white 10%, silver 10%, silver 23%, white 23%, white 30%, silver 30%, silver 43%, white 43%, white 50%, silver 50%, silver 63%, white 63%, white 71%, transparent 71%, transparent),
+  radial-gradient(circle at 100% 50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent),
+  radial-gradient(circle at 0    50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent);
+  background-size: 100px 50px;
+  /* END */
+  color: black;
+  font-family: Archivo Narrow;
+}
+
+a {
+  color: #02661d;
+}
+
+a:hover {
+  color: #9cc24d;
+}
+
+hr {
+  border: 2px solid #114634;
+}
+
+header {
+  overflow: auto;
+  padding: 20px 15px 10px 15px;
+  background: #114634;
+}
+
+header h3 {
+  margin-bottom: 0;
+  font-size: 20px;
+  color: #fff;
+}
+
+header h1 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 50px;
+  color: #fff;
+}
+
+nav {
+  display: block;
+  overflow: auto;
+  margin: 5px 0 0 0; /* whitespace between */
+  padding: 20px 15px 10px 15px;
+  background: #000000;
+
+}
+
+nav ul {
+  display: inline-block;
+  margin: auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  padding: 0px 25px 0px 5px;
+  border-left: solid 3px #fff;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover{
+  border-left: solid 5px #fff;
+  color: #fff;
+  text-decoration: underline;
+}
+
+main {
+  display: block;
+  overflow: auto;
+  margin: 5px 0 0 0; /* whitespace between */
+  padding: 10px 20px 40px 20px;
+  background: #fff;
+}
+
+main h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+main section {
+  width: 100%;
+  display: inline-block;
+  margin: 10px 0 10px 0;
+}
+
+footer {
+  display: block;
+  margin: 5px 0 0 0;
+  padding: 15px 15px 35px 15px;
+  background: #000000;
+}
+
+footer p {
+  margin: 0;
+  color: #fff;
+}
+
+footer div.footertext {
+  display: inline-block;
+  margin-right: 15%;
+  border-left: solid 3px #fff;
+  padding-left: 5px;
+}
+
+footer div.footercol {
+  height: 100%;
+  display: inline-block;
+}
+
+footer div.footercol h4 {
+  margin: 0;
+  border-left: solid 3px #fff;
+  padding-left: 5px;
+  color: #fff;
+  font-weight: bold;
+}
+
+div.artistblurb {
+  border-left: solid 3px #000;
+  padding-left: 5px;
+}
+
+div.artistblurb h3 {
+  text-transform: uppercase;
+}
+
+div.artistblurb p {
+  margin: 0;
+}
+
+div.floornav h4{
+  margin-bottom: 0;
+  border-left: solid 3px #000;
+  padding-left: 5px;
+}
+
+div.floornav ul{
+  margin-top: 0;
+}
+
+/*START CSS FOR SLIDESHOW GALLERY*/
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  width: 100%;
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #000;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Fits thumbnail images */
+div.column img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+/*END CSS FOR SLIDESHOW GALLERY*/
+
+/*START CSS FOR GALLERY*/
+div.gallery {
+  margin-top: 20px;
+  border-bottom: 5px solid #fff;
+}
+
+div.gallery:hover {
+  border-bottom: 5px solid #02661d;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+div.desc {
+  height: 90px;
+  padding: 15px;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+div.desc p {
+  margin-top: 0;
+  margin-bottom: 0;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*END CSS FOR GALLERY*/

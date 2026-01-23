@@ -1,0 +1,15 @@
+https://www.w3schools.com/howto/howto_css_modal_images.asp
+https://www.w3schools.com/howto/howto_css_image_gallery.asp
+https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp
+
+Palette:
+color: #fff;
+color: #000;
+color: #02661d;
+color: #9cc24d;
+
+REMEMBER: append ..\ to every file if the place you are appending it to is in a separate folder/directory/whatever. Read: https://css-tricks.com/quick-reminder-about-file-paths/
+
+This is Mrs. Lasko: https://www.linkedin.com/in/viv-lasko-5a9b0399/
+
+write for 3e011, 3e008, 3e016
